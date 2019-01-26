@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7dc1e31-aa24-45a8-90e7-008c7cb29472" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LibInfoSys.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LibInfoSys.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/nju/libInfoSys/Entity/Administrator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/nju/libInfoSys/Entity/BookStrategy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/nju/libInfoSys/Entity/Graduate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/nju/libInfoSys/Entity/Teacher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/nju/libInfoSys/Entity/Undergraduate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/nju/libInfoSys/Entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/nju/libInfoSys/Factory/StrategyFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/nju/libInfoSys/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/nju/libInfoSys/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/nju/libInfoSys/Wrapper/ConcretePermission1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/nju/libInfoSys/Wrapper/Permission.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/nju/libInfoSys/onlineReading/EPUBReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/nju/libInfoSys/onlineReading/OnlineReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/nju/libInfoSys/onlineReading/PDFReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/nju/libInfoSys/onlineReading/Reader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/nju/libInfoSys/onlineReading/WordReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spring-config.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="a7dc1e31-aa24-45a8-90e7-008c7cb29472" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -113,23 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/Administrator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="30">
-                <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -271,7 +237,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548515583677" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548515639812" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -306,12 +272,12 @@
       <updated>1548467746799</updated>
       <workItem from="1548467748416" duration="27000" />
       <workItem from="1548504392684" duration="5128000" />
-      <workItem from="1548515120886" duration="431000" />
+      <workItem from="1548515120886" duration="487000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5586000" />
+    <option name="totallyTimeSpent" value="5642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -521,13 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/Administrator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -535,6 +494,13 @@
             <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/Administrator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
         </state>
       </provider>
     </entry>
