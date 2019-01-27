@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="edu.nju.libInfoSys.Entity.Generated.RecordEntity" table="Record" schema="libinfo">
+        <id name="recordId" column="recordId"/>
+        <property name="bookId" column="bookId"/>
+        <property name="userId" column="userId"/>
+        <property name="borrowTime" column="borrowTime"/>
+        <property name="returnTime" column="returnTime"/>
+        <property name="overduePenalty" column="overduePenalty"/>
+        <property name="recordStatus" column="recordStatus"/>
+    </class>
+</hibernate-mapping>

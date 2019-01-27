@@ -1,10 +1,14 @@
 package edu.nju.libInfoSys.Dao;
 
 import edu.nju.libInfoSys.Entity.BookStrategy;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class BookOperationDaoImpl implements BookOperationDao {
+
     @Override
     public BookStrategy getBookStrategyById(int id) {
+
         return null;
     }
 

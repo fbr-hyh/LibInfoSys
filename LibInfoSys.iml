@@ -4,7 +4,8 @@
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
-          <unit-entry name="hibernate.cfg.xml" />
+          <unit-entry name="hibernate.cfg.xml" value="73532d22-5323-40c4-ba24-b2e8d7fa5172" />
+          <unit-entry name="sessionFactory" />
         </datasource-map>
         <naming-strategy-map />
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/Resources/hibernate.cfg.xml" />
@@ -44,5 +45,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Hibernate 5.3.7-5.3.7" level="project" />
     <orderEntry type="library" name="Spring-4.3.18.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.13" level="project" />
+    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.6.1" level="project" />
   </component>
 </module>

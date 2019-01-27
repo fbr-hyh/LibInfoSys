@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="edu.nju.libInfoSys.Entity.Generated.BookEntity" table="Book" schema="libinfo">
+        <id name="bookId" column="bookId"/>
+        <property name="bookName" column="bookName"/>
+        <property name="bookPrice" column="bookPrice"/>
+        <property name="bookStatus" column="bookStatus"/>
+    </class>
+</hibernate-mapping>

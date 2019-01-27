@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="edu.nju.libInfoSys.Entity.Generated.BookStrategyEntity" table="BookStrategy" schema="libinfo">
+        <id name="strategyId" column="strategyId"/>
+        <property name="strategyName" column="strategyName"/>
+        <property name="maxBorrowNum" column="maxBorrowNum"/>
+        <property name="borrowPeriods" column="borrowPeriods"/>
+        <property name="blockedCategories" column="blockedCategories"/>
+    </class>
+</hibernate-mapping>

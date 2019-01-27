@@ -4,8 +4,31 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.url"/>
-        <property name="connection.driver_class"/>
+        <property name="connection.url">jdbc:mysql://localhost:3306/libinfo</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+
+        <property name="connection.username">root</property>
+        <property name="connection.password">123123</property>
+
+        <property name="hibernate.current_session_context_class">thread</property>
+
+        <!--相关的属性-->
+        <property name="hbm2ddl.auto">update</property>
+        <!--在控制台显示执行的MySQL语句-->
+        <!--<property name="show_sql">true</property>-->
+        <!--格式化控制台显示的MySQL语句-->
+        <!--<property name="format_sql">true</property>-->
+        <!--使用MySQL数据库的方言-->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <mapping class="edu.nju.libInfoSys.Entity.Generated.BookEntity"/>
+        <mapping resource="BookEntity.hbm.xml"/>
+        <mapping class="edu.nju.libInfoSys.Entity.Generated.BookStrategyEntity"/>
+        <mapping resource="BookStrategyEntity.hbm.xml"/>
+        <mapping class="edu.nju.libInfoSys.Entity.Generated.RecordEntity"/>
+        <mapping resource="RecordEntity.hbm.xml"/>
+        <mapping class="edu.nju.libInfoSys.Entity.Generated.UserEntity"/>
+        <mapping resource="UserEntity.hbm.xml"/>
         <!-- <property name="connection.username"/> -->
         <!-- <property name="connection.password"/> -->
 
@@ -13,3 +36,12 @@
         <!-- <property name="hbm2ddl.auto">update</property> -->
     </session-factory>
 </hibernate-configuration>
+
+
+
+
+
+
+
+
+
