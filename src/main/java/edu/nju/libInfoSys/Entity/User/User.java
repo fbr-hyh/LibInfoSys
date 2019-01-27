@@ -1,7 +1,6 @@
 package edu.nju.libInfoSys.Entity.User;
 
 import edu.nju.libInfoSys.Factory.StrategyFactory;
-import edu.nju.libInfoSys.Service.BookOprationService;
 import edu.nju.libInfoSys.Service.UserService;
 import edu.nju.libInfoSys.Service.UserServiceImpl;
 import edu.nju.libInfoSys.onlineReading.OnlineReader;

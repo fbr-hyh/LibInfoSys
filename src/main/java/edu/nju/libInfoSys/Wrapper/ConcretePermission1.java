@@ -1,5 +1,7 @@
 package edu.nju.libInfoSys.Wrapper;
 
+import edu.nju.libInfoSys.Entity.BorrowRecord;
+import edu.nju.libInfoSys.Entity.OverduePenaltyRecord;
 import edu.nju.libInfoSys.User;
 import edu.nju.libInfoSys.Entity.User.Administrator;
 
@@ -11,10 +13,10 @@ public class ConcretePermission1 extends Permission {
         super(user);
     }
 
-    public ArrayList<String> generateBorrowReport(String userId) {
+    public ArrayList<BorrowRecord> generateBorrowReport(String userId) {
         return administrator.generateBorrowReport(userId);
     }
-    public ArrayList<String> generateOverduePenaltyReport(String userId) {
+    public ArrayList<OverduePenaltyRecord> generateOverduePenaltyReport(String userId) {
         return administrator.generateOverduePenaltyReport(userId);
     }
     public double generateOverduePenalty(String userId) {
