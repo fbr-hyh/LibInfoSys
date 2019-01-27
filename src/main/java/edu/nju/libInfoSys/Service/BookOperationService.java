@@ -12,4 +12,6 @@ public interface BookOperationService {
     boolean borrowBook(String bookId);
 
     boolean returnBook(String bookId);
+
+    boolean editBookPrice(String bookId, double price);
 }

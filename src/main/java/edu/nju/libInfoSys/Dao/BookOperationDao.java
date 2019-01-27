@@ -7,5 +7,6 @@ public interface BookOperationDao {
     BookStrategy getBookStrategyByName(String name);
     int getBookStatus(String bookId);
     boolean setBookStatus(String bookId,int status);
+    boolean modifyBookPrice(String bookId, double price);
 
 }

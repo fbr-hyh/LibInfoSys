@@ -4,6 +4,8 @@ package edu.nju.libInfoSys.Entity.User;
 
 import edu.nju.libInfoSys.Entity.BorrowRecord;
 import edu.nju.libInfoSys.Entity.OverduePenaltyRecord;
+import edu.nju.libInfoSys.Service.BookOperationService;
+import edu.nju.libInfoSys.Service.BookOperationServiceImpl;
 import edu.nju.libInfoSys.Service.UserInfoService;
 import edu.nju.libInfoSys.Service.UserInfoServiceImpl;
 
@@ -12,6 +14,7 @@ import java.util.ArrayList;
 public class Administrator extends User implements edu.nju.libInfoSys.User {
 
     UserInfoService userInfoService = new UserInfoServiceImpl();
+    BookOperationService bookOperationService = new BookOperationServiceImpl();
 
     public Administrator() {
     }
@@ -53,5 +56,10 @@ public class Administrator extends User implements edu.nju.libInfoSys.User {
         System.out.println(userId+" 未还款: "+price);
         return price;
     }
+
+    public boolean editBookPrice(String bookId,double price) {
+        bookOperationService.editBookPrice(bookId, price);
+    }
+
 
 }
