@@ -1,4 +1,4 @@
-package main.java.edu.nju.libInfoSys.Entity;
+package edu.nju.libInfoSys.Entity;
 
 public class Book {
     String bookId;

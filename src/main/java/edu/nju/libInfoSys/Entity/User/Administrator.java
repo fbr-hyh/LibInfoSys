@@ -1,13 +1,15 @@
-package main.java.edu.nju.libInfoSys.Entity.User;
+package edu.nju.libInfoSys.Entity.User;
 
-import main.java.edu.nju.libInfoSys.Entity.BorrowRecord;
-import main.java.edu.nju.libInfoSys.Entity.OverduePenaltyRecord;
-import main.java.edu.nju.libInfoSys.Service.UserInfoService;
-import main.java.edu.nju.libInfoSys.Service.UserInfoServiceImpl;
+
+
+import edu.nju.libInfoSys.Entity.BorrowRecord;
+import edu.nju.libInfoSys.Entity.OverduePenaltyRecord;
+import edu.nju.libInfoSys.Service.UserInfoService;
+import edu.nju.libInfoSys.Service.UserInfoServiceImpl;
 
 import java.util.ArrayList;
 
-public class Administrator extends User implements main.java.edu.nju.libInfoSys.User {
+public class Administrator extends User implements edu.nju.libInfoSys.User {
 
     UserInfoService userInfoService = new UserInfoServiceImpl();
 

@@ -1,4 +1,4 @@
-package main.java.edu.nju.libInfoSys.Service;
+package edu.nju.libInfoSys.Service;
 
 import edu.nju.libInfoSys.Entity.BorrowRecord;
 import edu.nju.libInfoSys.Entity.OverduePenaltyRecord;

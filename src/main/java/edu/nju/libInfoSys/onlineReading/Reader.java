@@ -1,4 +1,4 @@
-package main.java.edu.nju.libInfoSys.onlineReading;
+package edu.nju.libInfoSys.onlineReading;
 
 import java.io.File;
 

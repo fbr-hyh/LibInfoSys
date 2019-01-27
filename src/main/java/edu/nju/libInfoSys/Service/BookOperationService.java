@@ -1,6 +1,6 @@
-package main.java.edu.nju.libInfoSys.Service;
+package edu.nju.libInfoSys.Service;
 
-import main.java.edu.nju.libInfoSys.Entity.BookStrategy;
+import edu.nju.libInfoSys.Entity.BookStrategy;
 
 public interface BookOperationService {
     BookStrategy getBookStrategyById(int id);

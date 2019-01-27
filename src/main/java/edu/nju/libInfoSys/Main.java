@@ -1,4 +1,4 @@
-package main.java.edu.nju.libInfoSys;
+package edu.nju.libInfoSys;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Metamodel;

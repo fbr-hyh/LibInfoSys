@@ -1,7 +1,7 @@
-package main.java.edu.nju.libInfoSys.Entity.User;
+package edu.nju.libInfoSys.Entity.User;
 
 
-public class Graduate extends User implements main.java.edu.nju.libInfoSys.User {
+public class Graduate extends User implements edu.nju.libInfoSys.User {
     public Graduate() {
     }
 

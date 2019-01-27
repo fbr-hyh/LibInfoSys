@@ -1,6 +1,6 @@
-package main.java.edu.nju.libInfoSys.Entity.User;
+package edu.nju.libInfoSys.Entity.User;
 
-public class Teacher extends User implements main.java.edu.nju.libInfoSys.User {
+public class Teacher extends User implements edu.nju.libInfoSys.User {
 
     public Teacher() {
     }
