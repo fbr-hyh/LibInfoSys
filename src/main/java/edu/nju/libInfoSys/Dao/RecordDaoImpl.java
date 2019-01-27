@@ -1,6 +1,6 @@
 package edu.nju.libInfoSys.Dao;
 
-import edu.nju.libInfoSys.Entity.Record;
+import edu.nju.libInfoSys.Entity.RecordEntity;
 
 import java.sql.Timestamp;
 
@@ -11,7 +11,7 @@ public class RecordDaoImpl implements RecordDao {
     }
 
     @Override
-    public Record getNotReturnRecord(String bookId, String userId) { //status=0
+    public RecordEntity getNotReturnRecord(String bookId, String userId) { //status=0
         return null;
     }
 

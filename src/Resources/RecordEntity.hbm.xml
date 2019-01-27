@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="edu.nju.libInfoSys.Entity.Generated.RecordEntity" table="Record" schema="libinfo">
+    <class name="edu.nju.libInfoSys.Entity.RecordEntity" table="Record" schema="libinfo">
         <id name="recordId" column="recordId"/>
         <property name="bookId" column="bookId"/>
         <property name="userId" column="userId"/>

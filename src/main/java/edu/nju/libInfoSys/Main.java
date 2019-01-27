@@ -1,27 +1,17 @@
 package edu.nju.libInfoSys;
 
 import edu.nju.libInfoSys.Entity.User.*;
-import edu.nju.libInfoSys.Entity.User.User;
-import org.hibernate.HibernateException;
-import org.hibernate.Metamodel;
-import org.hibernate.query.Query;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
-
-import javax.persistence.metamodel.EntityType;
 
 import java.io.File;
-import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
         //初始的借书策略 teacher 策略1   undergraduate 策略2  graduate 策略3
 
-        User teacher = new Teacher("teacher","123");
-        User undergraduate = new Undergraduate("undergraduate","123");
-        User graduate = new Graduate("graduate","123");
-        User admin = new Administrator("admin","123");
+        UserEntity teacher = new Teacher("teacher", "123");
+        UserEntity undergraduate = new Undergraduate("undergraduate", "123");
+        UserEntity graduate = new Graduate("graduate", "123");
+        UserEntity admin = new Administrator("admin", "123");
 
         //1 borrow method不同
         teacher.borrowBook("TP124.1-1");

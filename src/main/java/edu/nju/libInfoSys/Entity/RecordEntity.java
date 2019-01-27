@@ -1,4 +1,4 @@
-package edu.nju.libInfoSys.Entity.Generated;
+package edu.nju.libInfoSys.Entity;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
@@ -115,5 +115,18 @@ public class RecordEntity {
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         result = 31 * result + recordStatus;
         return result;
+    }
+
+    public RecordEntity() {
+    }
+
+    public RecordEntity(int recordId, String bookId, String userId, Timestamp borrowTime, Timestamp returnTime, double overduePenalty, int recordStatus) {
+        this.recordId = recordId;
+        this.bookId = bookId;
+        this.userId = userId;
+        this.borrowTime = borrowTime;
+        this.returnTime = returnTime;
+        this.overduePenalty = overduePenalty;
+        this.recordStatus = recordStatus;
     }
 }

@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="edu.nju.libInfoSys.Entity.Generated.BookStrategyEntity" table="BookStrategy" schema="libinfo">
+    <class name="edu.nju.libInfoSys.Entity.BookStrategyEntity" table="BookStrategy" schema="libinfo">
         <id name="strategyId" column="strategyId"/>
         <property name="strategyName" column="strategyName"/>
         <property name="maxBorrowNum" column="maxBorrowNum"/>

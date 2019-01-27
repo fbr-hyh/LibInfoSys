@@ -1,16 +1,16 @@
 package edu.nju.libInfoSys.Dao;
 
-import edu.nju.libInfoSys.Entity.Record;
+import edu.nju.libInfoSys.Entity.RecordEntity;
 
 import java.util.ArrayList;
 
 public interface UserInfoDao {
 
-//    ArrayList<Record> getAllReports();
+//    ArrayList<RecordEntity> getAllReports();
 
-    ArrayList<Record> getReportsByUserId(String userId);
+    ArrayList<RecordEntity> getReportsByUserId(String userId);
 
-    ArrayList<Record> getOverdueReportsByUserId(String userId);
+    ArrayList<RecordEntity> getOverdueReportsByUserId(String userId);
 
     double getOverduePenaltyByUserId(String userId); //status==1
 

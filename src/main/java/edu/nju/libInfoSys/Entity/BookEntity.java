@@ -1,4 +1,4 @@
-package edu.nju.libInfoSys.Entity.Generated;
+package edu.nju.libInfoSys.Entity;
 
 import javax.persistence.*;
 
@@ -8,7 +8,7 @@ public class BookEntity {
     private String bookId;
     private String bookName;
     private double bookPrice;
-    private int bookStatus;
+    private int bookStatus; //0已被借阅 1未被借阅
 
     @Id
     @Column(name = "bookId")

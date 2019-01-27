@@ -1,6 +1,6 @@
 package edu.nju.libInfoSys.Factory;
 
-import edu.nju.libInfoSys.Entity.BookStrategy;
+import edu.nju.libInfoSys.Entity.BookStrategyEntity;
 import edu.nju.libInfoSys.Service.BookOperationService;
 import edu.nju.libInfoSys.Service.BookOperationServiceImpl;
 
@@ -8,9 +8,9 @@ import java.util.InputMismatchException;
 
 public  class StrategyFactory {
     private static BookOperationService bookOperationService =new BookOperationServiceImpl();
-    private static BookStrategy teacherStrategy;
-    private static BookStrategy undergraduateStrategy;
-    private static BookStrategy graduateStrategy;
+    private static BookStrategyEntity teacherStrategy;
+    private static BookStrategyEntity undergraduateStrategy;
+    private static BookStrategyEntity graduateStrategy;
 
     static {
         //初始策略
@@ -19,7 +19,8 @@ public  class StrategyFactory {
         graduateStrategy = bookOperationService.getBookStrategyById(3);
 
     }
-    public static BookStrategy getStrategy(int userType) {
+
+    public static BookStrategyEntity getStrategy(int userType) {
         switch (userType) {
             case 1:
                 return teacherStrategy;

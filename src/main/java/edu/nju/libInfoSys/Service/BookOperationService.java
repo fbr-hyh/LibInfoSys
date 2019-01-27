@@ -1,11 +1,11 @@
 package edu.nju.libInfoSys.Service;
 
-import edu.nju.libInfoSys.Entity.BookStrategy;
+import edu.nju.libInfoSys.Entity.BookStrategyEntity;
 
 public interface BookOperationService {
-    BookStrategy getBookStrategyById(int id);
+    BookStrategyEntity getBookStrategyById(int id);
 
-    BookStrategy getBookStrategyByName(String name);
+    BookStrategyEntity getBookStrategyByName(String name);
 
     int getBookStatus(String bookId);
 

@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="edu.nju.libInfoSys.Entity.Generated.UserEntity" table="User" schema="libinfo">
+    <class name="edu.nju.libInfoSys.Entity.User.UserEntity" table="User" schema="libinfo">
         <id name="userId" column="userId"/>
         <property name="password" column="password"/>
         <property name="userType" column="userType"/>

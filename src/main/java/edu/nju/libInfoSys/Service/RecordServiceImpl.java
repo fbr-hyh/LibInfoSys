@@ -2,10 +2,9 @@ package edu.nju.libInfoSys.Service;
 
 import edu.nju.libInfoSys.Dao.RecordDao;
 import edu.nju.libInfoSys.Dao.RecordDaoImpl;
-import edu.nju.libInfoSys.Entity.Record;
+import edu.nju.libInfoSys.Entity.RecordEntity;
 
 import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
 
 public class RecordServiceImpl implements RecordService {
     RecordDao recordDao = new RecordDaoImpl();
@@ -22,8 +21,8 @@ public class RecordServiceImpl implements RecordService {
         //计算overduePen
         Timestamp returnTime = new Timestamp(System.currentTimeMillis());
 
-        Record record = recordDao.getNotReturnRecord(userId, bookId);
-        Timestamp borrowTime = record.getBorrowTime();
+        RecordEntity recordEntity = recordDao.getNotReturnRecord(userId, bookId);
+        Timestamp borrowTime = recordEntity.getBorrowTime();
 
         long t1 = returnTime.getTime();
         long t2 = borrowTime.getTime();
@@ -38,7 +37,7 @@ public class RecordServiceImpl implements RecordService {
         //同时填入数据库中
         //填入returnTime
         //更改status，如果为0，则改status为2，如果>0，则改status为1
-        recordDao.setReturnedOverdueAndStatus(record.getRecordId(), returnTime, overduePenalty, status);
+        recordDao.setReturnedOverdueAndStatus(recordEntity.getRecordId(), returnTime, overduePenalty, status);
         return overduePenalty;
     }
 

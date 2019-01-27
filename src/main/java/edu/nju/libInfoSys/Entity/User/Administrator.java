@@ -11,7 +11,7 @@ import edu.nju.libInfoSys.Service.UserInfoServiceImpl;
 
 import java.util.ArrayList;
 
-public class Administrator extends User implements edu.nju.libInfoSys.User {
+public class Administrator extends UserEntity implements edu.nju.libInfoSys.User {
 
     UserInfoService userInfoService = new UserInfoServiceImpl();
     BookOperationService bookOperationService = new BookOperationServiceImpl();

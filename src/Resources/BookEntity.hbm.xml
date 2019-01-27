@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="edu.nju.libInfoSys.Entity.Generated.BookEntity" table="Book" schema="libinfo">
+    <class name="edu.nju.libInfoSys.Entity.BookEntity" table="Book" schema="libinfo">
         <id name="bookId" column="bookId"/>
         <property name="bookName" column="bookName"/>
         <property name="bookPrice" column="bookPrice"/>

@@ -21,13 +21,13 @@
         <!--使用MySQL数据库的方言-->
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 
-        <mapping class="edu.nju.libInfoSys.Entity.Generated.BookEntity"/>
+        <mapping class="edu.nju.libInfoSys.Entity.BookEntity"/>
         <mapping resource="BookEntity.hbm.xml"/>
-        <mapping class="edu.nju.libInfoSys.Entity.Generated.BookStrategyEntity"/>
+        <mapping class="edu.nju.libInfoSys.Entity.BookStrategyEntity"/>
         <mapping resource="BookStrategyEntity.hbm.xml"/>
-        <mapping class="edu.nju.libInfoSys.Entity.Generated.RecordEntity"/>
+        <mapping class="edu.nju.libInfoSys.Entity.RecordEntity"/>
         <mapping resource="RecordEntity.hbm.xml"/>
-        <mapping class="edu.nju.libInfoSys.Entity.Generated.UserEntity"/>
+        <mapping class="edu.nju.libInfoSys.Entity.User.UserEntity"/>
         <mapping resource="UserEntity.hbm.xml"/>
         <!-- <property name="connection.username"/> -->
         <!-- <property name="connection.password"/> -->
