@@ -1,6 +1,6 @@
-package edu.nju.libInfoSys.Service;
+package main.java.edu.nju.libInfoSys.Service;
 
-import edu.nju.libInfoSys.Entity.User.Administrator;
+import main.java.edu.nju.libInfoSys.Entity.User.Administrator;
 
 import java.util.ArrayList;
 

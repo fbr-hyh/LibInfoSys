@@ -1,4 +1,4 @@
-package edu.nju.libInfoSys.onlineReading;
+package main.java.edu.nju.libInfoSys.onlineReading;
 
 import java.io.File;
 import java.util.InputMismatchException;

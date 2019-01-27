@@ -1,34 +1,30 @@
-package edu.nju.libInfoSys.Service;
+package main.java.edu.nju.libInfoSys.Service;
 
-import edu.nju.libInfoSys.Dao.BookOperationDao;
-import edu.nju.libInfoSys.Dao.BookOperationDaoImpl;
-import edu.nju.libInfoSys.Entity.BookStrategy;
+import main.java.edu.nju.libInfoSys.Entity.BookStrategy;
 
 public class BookOperationServiceImpl implements BookOperationService {
-    BookOperationDao bookOperationDao = new BookOperationDaoImpl();
-
     @Override
     public BookStrategy getBookStrategyById(int id) {
-        return bookOperationDao.getBookStrategyById(id);
+        return null;
     }
 
     @Override
     public BookStrategy getBookStrategyByName(String name) {
-        return bookOperationDao.getBookStrategyByName(name);
+        return null;
     }
 
     @Override
     public int getBookStatus(String bookId) {
-        return bookOperationDao.getBookStatus(bookId);
+        return 0;
     }
 
-    @Override //0被借阅
+    @Override
     public boolean borrowBook(String bookId) {
-        return bookOperationDao.setBookStatus(bookId,0);
+        return false;
     }
 
-    @Override //1未被借阅
+    @Override
     public boolean returnBook(String bookId) {
-        return bookOperationDao.setBookStatus(bookId,1);
+        return false;
     }
 }

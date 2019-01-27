@@ -1,4 +1,4 @@
-package edu.nju.libInfoSys.Entity;
+package main.java.edu.nju.libInfoSys.Entity;
 
 import java.sql.Timestamp;
 
