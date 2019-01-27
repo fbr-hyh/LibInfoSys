@@ -39,6 +39,8 @@ public class BookStrategy {
         if (blockedCategories.contains(catagory)) {
             System.out.println("该用户不允许借阅该类图书: " + catagory);
             return false;
+        } else if (recordService.getBorrowingNum(userId)>=maxBorrowNum) {  //maxBorrowNum
+            System.out.println("该用户借阅图书数量已达上限");
         } else {
             //借阅图书 图书status:=1
             bookOprationService.borrowBook(bookId);
@@ -57,8 +59,7 @@ public class BookStrategy {
 
         // 0表示成功，正数表示逾期罚款？
         //读取record信息
-        recordService.returnBook(userId, bookId);
-        double overdue=returnBook(userId,bookId);
+        double overdue=recordService.returnBook(userId, bookId,borrowPeriods);
         return overdue;
     }
 
