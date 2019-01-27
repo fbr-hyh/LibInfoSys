@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7dc1e31-aa24-45a8-90e7-008c7cb29472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/BorrowingRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Service/BookOprationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Service/BookOprationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Service/UserInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Service/UserInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/User/Administrator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/BookStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/BookStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/Graduate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/User/Graduate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/User/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/Undergraduate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/User/Undergraduate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/User/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Factory/StrategyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Factory/StrategyFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Wrapper/ConcretePermission1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Wrapper/ConcretePermission1.java" afterDir="false" />
-    </list>
+    <list default="true" id="a7dc1e31-aa24-45a8-90e7-008c7cb29472" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Factory/StrategyFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="698">
-              <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+            <state relative-caret-position="296">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,19 +49,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/User/Undergraduate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/BookStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+            <state relative-caret-position="88">
+              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
               <folding>
                 <element signature="method#BookStrategy#0;class#BookStrategy#0" />
                 <element signature="method#BookStrategy#1;class#BookStrategy#0" />
@@ -276,7 +247,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548523912278" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548553683611" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -314,18 +285,18 @@
       <updated>1548467746799</updated>
       <workItem from="1548467748416" duration="27000" />
       <workItem from="1548504392684" duration="5128000" />
-      <workItem from="1548515120886" duration="7112000" />
+      <workItem from="1548515120886" duration="8018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12267000" />
+    <option name="totallyTimeSpent" value="13173000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20958512" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20958512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -354,7 +325,7 @@
       <window_info anchor="right" id="Maven" order="3" weight="0.3297568" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.3297568" />
+      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.3297568" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
@@ -611,12 +582,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Factory/StrategyFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/BookStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        <state relative-caret-position="88">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#BookStrategy#0;class#BookStrategy#0" />
+            <element signature="method#BookStrategy#1;class#BookStrategy#0" />
+            <element signature="method#setBlockedCategories#0;class#BookStrategy#0" />
           </folding>
         </state>
       </provider>
@@ -628,14 +601,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Entity/BookStrategy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/nju/libInfoSys/Factory/StrategyFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        <state relative-caret-position="296">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
-            <element signature="method#BookStrategy#0;class#BookStrategy#0" />
-            <element signature="method#BookStrategy#1;class#BookStrategy#0" />
-            <element signature="method#setBlockedCategories#0;class#BookStrategy#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
