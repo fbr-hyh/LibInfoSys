@@ -33,9 +33,18 @@ public class BookStrategy {
             return false;
         }
         // 在blockedCategories表中的书不能借
-        String catagory = bookId.substring(0, 1);
-        if (blockedCategories.contains(catagory)) {
-            System.out.println("该用户不允许借阅该类图书: " + catagory);
+        String category = bookId.substring(0, 1);
+        String[] blockedCategoryList=blockedCategories.split(",");
+
+        boolean contain = false;
+        for (String str : blockedCategoryList) {
+            if (str.equals(category)) {
+                contain = true;
+                break;
+            }
+        }
+        if (contain) {
+            System.out.println("该用户不允许借阅该类图书: " + category);
             return false;
         } else if (recordService.getBorrowingNum(userId)>=maxBorrowNum) {  //maxBorrowNum
             System.out.println("该用户借阅图书数量已达上限");
