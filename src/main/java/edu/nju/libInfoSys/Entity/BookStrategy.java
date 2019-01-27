@@ -20,13 +20,14 @@ public class BookStrategy {
         this.blockedCategories = blockedCategories;
     }
 
-    public boolean borrowBook(String bookId) {
+    public boolean borrowBook(String userId,String bookId) {
         // TODO: 2019-01-26
         // 在blockedCategories表中的书不能借
+
         return true;
     }
 
-    public double returnBook(String bookId) {
+    public double returnBook(String userId,String bookId) {
         // TODO: 2019-01-26
         // 0表示成功，正数表示逾期罚款？
         return 0;

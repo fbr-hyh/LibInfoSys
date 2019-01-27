@@ -1,17 +1,23 @@
 package edu.nju.libInfoSys.Factory;
 
 import edu.nju.libInfoSys.Entity.BookStrategy;
+import edu.nju.libInfoSys.Service.BookOprationService;
+import edu.nju.libInfoSys.Service.BookOprationServiceImpl;
 
 import java.util.InputMismatchException;
 
 public  class StrategyFactory {
+    private static BookOprationService bookOprationService=new BookOprationServiceImpl();
     private static BookStrategy teacherStrategy;
-    private static BookStrategy graduateStrategy;
     private static BookStrategy undergraduateStrategy;
+    private static BookStrategy graduateStrategy;
 
     static {
         //初始策略
-        // TODO: 2019-01-26
+        teacherStrategy= bookOprationService.getBookStrategyById(1);
+        undergraduateStrategy= bookOprationService.getBookStrategyById(2);
+        graduateStrategy = bookOprationService.getBookStrategyById(3);
+
     }
     public static BookStrategy getStrategy(int userType) {
         switch (userType) {
@@ -27,7 +33,22 @@ public  class StrategyFactory {
     }
 
     public void setStrategy(int userType, int strategyId) {
-        // TODO: 2019-01-26  
+        switch (userType) {
+            case 1:
+                teacherStrategy = bookOprationService.getBookStrategyById(strategyId);
+                System.out.println("替换借还书策略成功");
+                break;
+            case 2:
+                undergraduateStrategy = bookOprationService.getBookStrategyById(strategyId);
+                System.out.println("替换借还书策略成功");
+                break;
+            case 3:
+                graduateStrategy = bookOprationService.getBookStrategyById(strategyId);
+                System.out.println("替换借还书策略成功");
+                break;
+            default:
+                throw new InputMismatchException();
+        }
     }
 
     public void setStrategy(int userType, String strategyName) {
