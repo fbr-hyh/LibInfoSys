@@ -12,7 +12,11 @@ public class RecordEntity {
     private Timestamp borrowTime;
     private Timestamp returnTime;
     private double overduePenalty;
+
     private int recordStatus;
+//    借书未还：0
+//    借书还了，但是欠费：1
+//    借书还了不欠费 / 缴纳罚金了：2
 
     @Id
     @Column(name = "recordId")
