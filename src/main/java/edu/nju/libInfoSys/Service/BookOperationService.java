@@ -2,7 +2,7 @@ package edu.nju.libInfoSys.Service;
 
 import edu.nju.libInfoSys.Entity.BookStrategy;
 
-public interface BookOprationService {
+public interface BookOperationService {
     BookStrategy getBookStrategyById(int id);
 
     BookStrategy getBookStrategyByName(String name);

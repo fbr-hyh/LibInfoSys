@@ -1,7 +1,7 @@
 package edu.nju.libInfoSys.Entity;
 
-import edu.nju.libInfoSys.Service.BookOprationService;
-import edu.nju.libInfoSys.Service.BookOprationServiceImpl;
+import edu.nju.libInfoSys.Service.BookOperationService;
+import edu.nju.libInfoSys.Service.BookOperationServiceImpl;
 import edu.nju.libInfoSys.Service.RecordService;
 import edu.nju.libInfoSys.Service.RecordServiceImpl;
 
@@ -26,7 +26,7 @@ public class BookStrategy {
     }
 
     public boolean borrowBook(String userId,String bookId) {
-        BookOprationService bookOprationService = new BookOprationServiceImpl();
+        BookOperationService bookOprationService = new BookOperationServiceImpl();
         RecordService recordService = new RecordServiceImpl();
 
         //可能已被借走
@@ -51,7 +51,7 @@ public class BookStrategy {
     }
 
     public double returnBook(String userId,String bookId) {
-        BookOprationService bookOprationService = new BookOprationServiceImpl();
+        BookOperationService bookOprationService = new BookOperationServiceImpl();
         RecordService recordService = new RecordServiceImpl();
 
         //还书
