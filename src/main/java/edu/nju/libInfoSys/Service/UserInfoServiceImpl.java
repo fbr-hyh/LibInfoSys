@@ -1,25 +1,28 @@
 package main.java.edu.nju.libInfoSys.Service;
 
+import edu.nju.libInfoSys.Entity.BorrowRecord;
+import edu.nju.libInfoSys.Entity.OverduePenaltyRecord;
+
 import java.util.ArrayList;
 
 public class UserInfoServiceImpl implements UserInfoService {
     @Override
-    public ArrayList<String> getAllBorrowReport() {
+    public ArrayList<BorrowRecord> getAllBorrowReport() {
         return null;
     }
 
     @Override
-    public ArrayList<String> getAllOverduePenalty() {
+    public ArrayList<OverduePenaltyRecord> getAllOverduePenalty() {
         return null;
     }
 
     @Override
-    public ArrayList<String> getBorrowReportByUserId(String userId) {
+    public ArrayList<BorrowRecord> getBorrowReportByUserId(String userId) {
         return null;
     }
 
     @Override
-    public ArrayList<String> getOverduePenaltyReportByUserId(String userId) {
+    public ArrayList<OverduePenaltyRecord> getOverduePenaltyReportByUserId(String userId) {
         return null;
     }
 

@@ -1,22 +1,22 @@
-package main.java.edu.nju.libInfoSys.Factory;
+package edu.nju.libInfoSys.Factory;
 
-import main.java.edu.nju.libInfoSys.Entity.BookStrategy;
-import main.java.edu.nju.libInfoSys.Service.BookOprationService;
-import main.java.edu.nju.libInfoSys.Service.BookOprationServiceImpl;
+import edu.nju.libInfoSys.Entity.BookStrategy;
+import edu.nju.libInfoSys.Service.BookOperationService;
+import edu.nju.libInfoSys.Service.BookOperationServiceImpl;
 
 import java.util.InputMismatchException;
 
 public  class StrategyFactory {
-    private static BookOprationService bookOprationService=new BookOprationServiceImpl();
+    private static BookOperationService bookOperationService =new BookOperationServiceImpl();
     private static BookStrategy teacherStrategy;
     private static BookStrategy undergraduateStrategy;
     private static BookStrategy graduateStrategy;
 
     static {
         //初始策略
-        teacherStrategy= bookOprationService.getBookStrategyById(1);
-        undergraduateStrategy= bookOprationService.getBookStrategyById(2);
-        graduateStrategy = bookOprationService.getBookStrategyById(3);
+        teacherStrategy= bookOperationService.getBookStrategyById(1);
+        undergraduateStrategy= bookOperationService.getBookStrategyById(2);
+        graduateStrategy = bookOperationService.getBookStrategyById(3);
 
     }
     public static BookStrategy getStrategy(int userType) {
@@ -35,15 +35,15 @@ public  class StrategyFactory {
     public void setStrategy(int userType, int strategyId) {
         switch (userType) {
             case 1:
-                teacherStrategy = bookOprationService.getBookStrategyById(strategyId);
+                teacherStrategy = bookOperationService.getBookStrategyById(strategyId);
                 System.out.println("替换借还书策略成功");
                 break;
             case 2:
-                undergraduateStrategy = bookOprationService.getBookStrategyById(strategyId);
+                undergraduateStrategy = bookOperationService.getBookStrategyById(strategyId);
                 System.out.println("替换借还书策略成功");
                 break;
             case 3:
-                graduateStrategy = bookOprationService.getBookStrategyById(strategyId);
+                graduateStrategy = bookOperationService.getBookStrategyById(strategyId);
                 System.out.println("替换借还书策略成功");
                 break;
             default:
@@ -52,7 +52,22 @@ public  class StrategyFactory {
     }
 
     public void setStrategy(int userType, String strategyName) {
-        // TODO: 2019-01-26  
+        switch (userType) {
+            case 1:
+                teacherStrategy = bookOperationService.getBookStrategyByName(strategyName);
+                System.out.println("替换借还书策略成功");
+                break;
+            case 2:
+                undergraduateStrategy = bookOperationService.getBookStrategyByName(strategyName);
+                System.out.println("替换借还书策略成功");
+                break;
+            case 3:
+                graduateStrategy = bookOperationService.getBookStrategyByName(strategyName);
+                System.out.println("替换借还书策略成功");
+                break;
+            default:
+                throw new InputMismatchException();
+        }
     }
     
 }

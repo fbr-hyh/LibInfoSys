@@ -2,9 +2,14 @@ package main.java.edu.nju.libInfoSys.Service;
 
 import main.java.edu.nju.libInfoSys.Entity.BookStrategy;
 
-public class BookOprationServiceImpl implements BookOprationService {
+public class BookOperationServiceImpl implements BookOperationService {
     @Override
     public BookStrategy getBookStrategyById(int id) {
+        return null;
+    }
+
+    @Override
+    public BookStrategy getBookStrategyByName(String name) {
         return null;
     }
 
