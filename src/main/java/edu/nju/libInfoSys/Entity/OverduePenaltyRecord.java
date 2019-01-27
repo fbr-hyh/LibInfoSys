@@ -8,15 +8,13 @@ public class OverduePenaltyRecord {
     String bookId;
     Timestamp timestamp;//欠费时间 即return时间
     double overduePenalty;
-    int recordStatus;
 
-    public OverduePenaltyRecord(int recordId, String userId, String bookId, Timestamp timestamp, double overduePenalty, int recordStatus) {
+    public OverduePenaltyRecord(int recordId, String userId, String bookId, Timestamp timestamp, double overduePenalty) {
         this.recordId = recordId;
         this.userId = userId;
         this.bookId = bookId;
         this.timestamp = timestamp;
         this.overduePenalty = overduePenalty;
-        this.recordStatus = recordStatus;
     }
 
     public int getRecordId() {
@@ -59,11 +57,4 @@ public class OverduePenaltyRecord {
         this.overduePenalty = overduePenalty;
     }
 
-    public int getRecordStatus() {
-        return recordStatus;
-    }
-
-    public void setRecordStatus(int recordStatus) {
-        this.recordStatus = recordStatus;
-    }
 }

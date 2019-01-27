@@ -1,11 +1,8 @@
 package edu.nju.libInfoSys.Entity.User;
 
 import edu.nju.libInfoSys.Factory.StrategyFactory;
-import edu.nju.libInfoSys.Service.UserService;
-import edu.nju.libInfoSys.Service.UserServiceImpl;
+import edu.nju.libInfoSys.Service.*;
 import edu.nju.libInfoSys.onlineReading.OnlineReader;
-import edu.nju.libInfoSys.onlineReading.PDFReader;
-import edu.nju.libInfoSys.onlineReading.Reader;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -49,8 +46,9 @@ public class User {
         return overduePenalty;
     }
 
-    public boolean pay(String bookId) {
-        boolean borrowResult = StrategyFactory.getStrategy(userType).pay(userId, bookId);
+    public boolean pay(String recordId) {
+        RecordService recordService = new RecordServiceImpl();
+        boolean borrowResult = recordService.pay(recordId);
         if (borrowResult) {
             System.out.println("缴费成功");
         } else {
