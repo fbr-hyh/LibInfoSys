@@ -6,7 +6,7 @@ public interface RecordService {
 
     double returnBook(String userId, String bookId,int borrowPeriods);
 
-    boolean pay(String userId, String bookId);
+    boolean pay(String recordId);
 
     int getBorrowingNum(String userId);
 

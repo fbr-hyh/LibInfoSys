@@ -61,11 +61,6 @@ public class BookStrategy {
         return overdue;
     }
 
-    public boolean pay(String userId, String bookId) {
-        //record更改
-        RecordService recordService = new RecordServiceImpl();
-        return recordService.pay(userId, bookId);
-    }
 
     public int getStrategyId() {
         return strategyId;

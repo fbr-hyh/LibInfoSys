@@ -8,13 +8,15 @@ public class BorrowRecord {
     String userId;
     Timestamp borrowTime;
     Timestamp returnTime;
+    int status;
 
-    public BorrowRecord(int recordId, String bookId, String userId, Timestamp borrowTime, Timestamp returnTime) {
+    public BorrowRecord(int recordId, String bookId, String userId, Timestamp borrowTime, Timestamp returnTime, int status) {
         this.recordId = recordId;
         this.bookId = bookId;
         this.userId = userId;
         this.borrowTime = borrowTime;
         this.returnTime = returnTime;
+        this.status = status;
     }
 
     public int getRecordId() {
@@ -55,5 +57,13 @@ public class BorrowRecord {
 
     public void setReturnTime(Timestamp returnTime) {
         this.returnTime = returnTime;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
 }

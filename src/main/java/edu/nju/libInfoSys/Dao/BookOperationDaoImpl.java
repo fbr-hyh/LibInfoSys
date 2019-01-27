@@ -22,4 +22,9 @@ public class BookOperationDaoImpl implements BookOperationDao {
     public boolean setBookStatus(String bookId, int status) {
         return false;
     }
+
+    @Override
+    public boolean modifyBookPrice(String bookId, double price) {
+        return false;
+    }
 }
