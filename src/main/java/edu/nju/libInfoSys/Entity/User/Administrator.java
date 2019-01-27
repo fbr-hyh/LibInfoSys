@@ -58,7 +58,7 @@ public class Administrator extends User implements edu.nju.libInfoSys.User {
     }
 
     public boolean editBookPrice(String bookId,double price) {
-        bookOperationService.editBookPrice(bookId, price);
+        return bookOperationService.editBookPrice(bookId, price);
     }
 
 
