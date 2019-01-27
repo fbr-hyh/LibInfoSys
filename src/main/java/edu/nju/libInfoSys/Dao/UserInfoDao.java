@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public interface UserInfoDao {
 
-    ArrayList<Record> getAllReports();
+//    ArrayList<Record> getAllReports();
 
     ArrayList<Record> getReportsByUserId(String userId);
 

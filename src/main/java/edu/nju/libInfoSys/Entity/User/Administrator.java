@@ -30,7 +30,7 @@ public class Administrator extends User implements edu.nju.libInfoSys.User {
         System.out.println(userId+" 的借书清单============================");
         for (BorrowRecord borrowRecord : borrowReports) {
             System.out.println("recordId:"+borrowRecord.getRecordId()+" bookId:"+borrowRecord.getBookId()
-                    +" userId:"+borrowRecord.getUserId()+" borrowTime:"+borrowRecord.getBorrowTime()+" returnTime:"+borrowRecord.getReturnTime());
+                    +" userId:"+borrowRecord.getUserId()+" borrowTime:"+borrowRecord.getBorrowTime()+" returnTime:"+borrowRecord.getReturnTime()+" status:"+borrowRecord.getStatus());
         }
         return borrowReports;
     }
@@ -43,8 +43,7 @@ public class Administrator extends User implements edu.nju.libInfoSys.User {
                     +" bookId:"+overduePenaltyRecord.getBookId()
                     +" userId:"+overduePenaltyRecord.getUserId()
                     +" time:"+overduePenaltyRecord.getTimestamp()
-                    +" overduePenalty:"+overduePenaltyRecord.getOverduePenalty()
-                    +" status:"+overduePenaltyRecord.getRecordStatus());
+                    +" overduePenalty:"+overduePenaltyRecord.getOverduePenalty());
         }
         return overduePenaltyReports;
     }

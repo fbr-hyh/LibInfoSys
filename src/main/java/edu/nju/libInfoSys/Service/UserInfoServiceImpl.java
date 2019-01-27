@@ -11,16 +11,15 @@ import java.util.ArrayList;
 public class UserInfoServiceImpl implements UserInfoService {
     UserInfoDao userInfoDao = new UserInfoDaoImpl();
 
-    @Override
-    public ArrayList<BorrowRecord> getAllBorrowReport() {
-
-        return null;
-    }
-
-    @Override
-    public ArrayList<OverduePenaltyRecord> getAllOverduePenalty() {
-        return null;
-    }
+//    @Override
+//    public ArrayList<BorrowRecord> getAllBorrowReport() {
+//        return null;
+//    }
+//
+//    @Override
+//    public ArrayList<OverduePenaltyRecord> getAllOverduePenalty() {
+//        return null;
+//    }
 
     @Override
     public ArrayList<BorrowRecord> getBorrowReportByUserId(String userId) {
