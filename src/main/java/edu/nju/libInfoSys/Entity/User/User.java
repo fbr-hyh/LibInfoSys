@@ -1,12 +1,8 @@
-package edu.nju.libInfoSys.Entity.User;
+package main.java.edu.nju.libInfoSys.Entity.User;
 
-import edu.nju.libInfoSys.Factory.StrategyFactory;
-import edu.nju.libInfoSys.Service.BookOprationService;
-import edu.nju.libInfoSys.Service.UserService;
-import edu.nju.libInfoSys.Service.UserServiceImpl;
-import edu.nju.libInfoSys.onlineReading.OnlineReader;
-import edu.nju.libInfoSys.onlineReading.PDFReader;
-import edu.nju.libInfoSys.onlineReading.Reader;
+import main.java.edu.nju.libInfoSys.Factory.StrategyFactory;
+import main.java.edu.nju.libInfoSys.Service.UserServiceImpl;
+import main.java.edu.nju.libInfoSys.onlineReading.OnlineReader;
 
 import java.io.File;
 import java.util.ArrayList;

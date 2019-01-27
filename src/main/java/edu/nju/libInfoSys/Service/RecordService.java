@@ -1,4 +1,4 @@
-package edu.nju.libInfoSys.Service;
+package main.java.edu.nju.libInfoSys.Service;
 
 
 public interface RecordService {

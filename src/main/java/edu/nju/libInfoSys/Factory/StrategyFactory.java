@@ -1,8 +1,8 @@
-package edu.nju.libInfoSys.Factory;
+package main.java.edu.nju.libInfoSys.Factory;
 
-import edu.nju.libInfoSys.Entity.BookStrategy;
-import edu.nju.libInfoSys.Service.BookOprationService;
-import edu.nju.libInfoSys.Service.BookOprationServiceImpl;
+import main.java.edu.nju.libInfoSys.Entity.BookStrategy;
+import main.java.edu.nju.libInfoSys.Service.BookOprationService;
+import main.java.edu.nju.libInfoSys.Service.BookOprationServiceImpl;
 
 import java.util.InputMismatchException;
 

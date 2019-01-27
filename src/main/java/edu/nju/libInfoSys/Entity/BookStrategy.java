@@ -1,9 +1,9 @@
-package edu.nju.libInfoSys.Entity;
+package main.java.edu.nju.libInfoSys.Entity;
 
-import edu.nju.libInfoSys.Service.BookOprationService;
-import edu.nju.libInfoSys.Service.BookOprationServiceImpl;
-import edu.nju.libInfoSys.Service.RecordService;
-import edu.nju.libInfoSys.Service.RecordServiceImpl;
+import main.java.edu.nju.libInfoSys.Service.BookOprationService;
+import main.java.edu.nju.libInfoSys.Service.BookOprationServiceImpl;
+import main.java.edu.nju.libInfoSys.Service.RecordService;
+import main.java.edu.nju.libInfoSys.Service.RecordServiceImpl;
 
 import java.util.ArrayList;
 

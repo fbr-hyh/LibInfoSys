@@ -1,4 +1,4 @@
-package edu.nju.libInfoSys;
+package main.java.edu.nju.libInfoSys;
 
 public interface User {
 }

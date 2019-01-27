@@ -1,6 +1,6 @@
-package edu.nju.libInfoSys.Service;
+package main.java.edu.nju.libInfoSys.Service;
 
-import edu.nju.libInfoSys.Entity.BookStrategy;
+import main.java.edu.nju.libInfoSys.Entity.BookStrategy;
 
 public class BookOprationServiceImpl implements BookOprationService {
     @Override

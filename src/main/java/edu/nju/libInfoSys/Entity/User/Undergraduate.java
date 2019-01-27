@@ -1,8 +1,6 @@
-package edu.nju.libInfoSys.Entity.User;
+package main.java.edu.nju.libInfoSys.Entity.User;
 
-import edu.nju.libInfoSys.Entity.User.User;
-
-public class Undergraduate extends User implements edu.nju.libInfoSys.User {
+public class Undergraduate extends User implements main.java.edu.nju.libInfoSys.User {
     public Undergraduate() {
     }
 

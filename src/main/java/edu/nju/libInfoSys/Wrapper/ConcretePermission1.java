@@ -1,7 +1,7 @@
-package edu.nju.libInfoSys.Wrapper;
+package main.java.edu.nju.libInfoSys.Wrapper;
 
-import edu.nju.libInfoSys.User;
-import edu.nju.libInfoSys.Entity.User.Administrator;
+import main.java.edu.nju.libInfoSys.User;
+import main.java.edu.nju.libInfoSys.Entity.User.Administrator;
 
 import java.util.ArrayList;
 
