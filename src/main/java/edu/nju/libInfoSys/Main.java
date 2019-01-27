@@ -1,11 +1,6 @@
 package edu.nju.libInfoSys;
 
-import edu.nju.libInfoSys.Dao.UserDao;
-import edu.nju.libInfoSys.Dao.UserInfoDao;
-import edu.nju.libInfoSys.Dao.UserInfoDaoImpl;
 import edu.nju.libInfoSys.Entity.User.*;
-import edu.nju.libInfoSys.Service.BookOperationService;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.File;
 
@@ -45,7 +40,7 @@ public class Main {
         graduate.read("EPUB",file);
 
         //4 当用户修改个人信息时，及时通知管理员
-        undergraduate.setPassword("123123");
+        undergraduate.modifyPassword("123123");
 
 
     }

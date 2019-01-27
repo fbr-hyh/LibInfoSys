@@ -4,15 +4,16 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+
     <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
         <property name="configLocation" value="hibernate.cfg.xml"/>
     </bean>
+
     <!--注入Bean-->
     <bean id="BookOperationService" class="edu.nju.libInfoSys.Service.BookOperationServiceImpl"/>
     <bean id="RecordService" class="edu.nju.libInfoSys.Service.RecordServiceImpl" />
     <bean id="UserInfoService" class="edu.nju.libInfoSys.Service.UserInfoServiceImpl"/>
     <bean id="UserService" class="edu.nju.libInfoSys.Service.UserServiceImpl"/>
-
 
     <!--扫描注解的文件-->
     <context:component-scan base-package="edu.nju.libInfoSys"/>

@@ -3,8 +3,7 @@ package edu.nju.libInfoSys.Entity.User;
 import edu.nju.libInfoSys.Factory.ServiceFactory;
 import edu.nju.libInfoSys.Factory.StrategyFactory;
 import edu.nju.libInfoSys.Service.RecordService;
-import edu.nju.libInfoSys.Service.RecordServiceImpl;
-import edu.nju.libInfoSys.Service.UserServiceImpl;
+import edu.nju.libInfoSys.Service.UserInfoService;
 import edu.nju.libInfoSys.onlineReading.OnlineReader;
 
 import javax.persistence.*;
@@ -16,7 +15,7 @@ import java.util.ArrayList;
 public class UserEntity {
     private String userId;
     private String password;
-    private int userType;
+    private int userType; // 1 2 3 4 teacher undergr  gra  admin
 
     @Id
     @Column(name = "userId")
@@ -36,7 +35,6 @@ public class UserEntity {
 
     public void setPassword(String password) {
         this.password = password;
-        notifyObservers(userId + "更改了密码");
     }
 
     @Basic
@@ -80,6 +78,16 @@ public class UserEntity {
         this.userType = userType;
     }
 
+    public boolean modifyPassword(String newPassword) {
+
+        if (newPassword.equals(this.password)) {
+            return false;
+        }
+        UserInfoService userInfoService = ServiceFactory.getUserInfoService();
+        userInfoService.modifyPassword(userId, newPassword);
+        notifyObservers(userId + "更改了密码");
+        return true;
+    }
 
     public boolean borrowBook(String bookId) {
 

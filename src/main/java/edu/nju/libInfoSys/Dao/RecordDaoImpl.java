@@ -20,8 +20,14 @@ public class RecordDaoImpl implements RecordDao {
     }
 
     @Override
-    public boolean add(String bookId, String userId, Timestamp borrowTime) {
+    public boolean add(String userId, String bookId, Timestamp borrowTime) {
+        Session session = getSession();
+        Transaction transaction = session.beginTransaction();
 
+        RecordEntity recordEntity = new RecordEntity(0, bookId, userId, borrowTime, null, 0, 0);
+        session.save(recordEntity);
+
+        transaction.commit();
         return false;
     }
 

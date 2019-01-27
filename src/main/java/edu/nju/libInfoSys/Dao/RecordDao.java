@@ -5,7 +5,7 @@ import edu.nju.libInfoSys.Entity.RecordEntity;
 import java.sql.Timestamp;
 
 public interface RecordDao {
-    boolean add(String bookId, String userId, Timestamp borrowTime);
+    boolean add(String userId, String bookId, Timestamp borrowTime);
 
     RecordEntity getNotReturnRecord(String bookId, String userId); //其中status应是0
 

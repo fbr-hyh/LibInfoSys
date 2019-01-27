@@ -65,7 +65,7 @@ public class BookOperationDaoImpl implements BookOperationDao {
         Query query = session.createQuery(hql);
         query.setParameter("id", bookId);
 
-        int result = Integer.valueOf((String) query.getSingleResult());
+        int result = Integer.valueOf(query.getSingleResult().toString());
 
         transaction.commit();
         return result;

@@ -1,7 +1,9 @@
 package edu.nju.libInfoSys.Entity.User;
 
 
-public class Graduate extends UserEntity implements edu.nju.libInfoSys.User {
+import edu.nju.libInfoSys.User;
+
+public class Graduate extends UserEntity implements User {
     public Graduate() {
     }
 

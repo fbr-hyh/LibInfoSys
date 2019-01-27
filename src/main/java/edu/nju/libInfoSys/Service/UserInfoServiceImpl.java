@@ -1,12 +1,10 @@
 package edu.nju.libInfoSys.Service;
 
 import edu.nju.libInfoSys.Dao.UserInfoDao;
-import edu.nju.libInfoSys.Dao.UserInfoDaoImpl;
 import edu.nju.libInfoSys.Entity.BorrowRecord;
 import edu.nju.libInfoSys.Entity.OverduePenaltyRecord;
 import edu.nju.libInfoSys.Entity.RecordEntity;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 
@@ -51,5 +49,10 @@ public class UserInfoServiceImpl implements UserInfoService {
     @Override
     public double getOverduePenaltyByUserId(String userId) {
         return userInfoDao.getOverduePenaltyByUserId(userId);
+    }
+
+    @Override
+    public void modifyPassword(String userId, String newPassword) {
+        userInfoDao.modifyPassword(userId, newPassword);
     }
 }

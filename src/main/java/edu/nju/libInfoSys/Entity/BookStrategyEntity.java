@@ -2,9 +2,7 @@ package edu.nju.libInfoSys.Entity;
 
 import edu.nju.libInfoSys.Factory.ServiceFactory;
 import edu.nju.libInfoSys.Service.BookOperationService;
-import edu.nju.libInfoSys.Service.BookOperationServiceImpl;
 import edu.nju.libInfoSys.Service.RecordService;
-import edu.nju.libInfoSys.Service.RecordServiceImpl;
 
 import javax.persistence.*;
 

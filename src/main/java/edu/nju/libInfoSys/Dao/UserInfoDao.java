@@ -14,4 +14,6 @@ public interface UserInfoDao {
 
     double getOverduePenaltyByUserId(String userId); //status==1
 
+    void modifyPassword(String userId, String newPassword);
+
 }
