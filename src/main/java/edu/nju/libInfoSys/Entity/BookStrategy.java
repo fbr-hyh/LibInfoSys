@@ -1,5 +1,10 @@
 package edu.nju.libInfoSys.Entity;
 
+import edu.nju.libInfoSys.Service.BookOprationService;
+import edu.nju.libInfoSys.Service.BookOprationServiceImpl;
+import edu.nju.libInfoSys.Service.RecordService;
+import edu.nju.libInfoSys.Service.RecordServiceImpl;
+
 import java.util.ArrayList;
 
 public class BookStrategy {
@@ -21,16 +26,46 @@ public class BookStrategy {
     }
 
     public boolean borrowBook(String userId,String bookId) {
-        // TODO: 2019-01-26
-        // 在blockedCategories表中的书不能借
+        BookOprationService bookOprationService = new BookOprationServiceImpl();
+        RecordService recordService = new RecordServiceImpl();
 
+        //可能已被借走
+        if (bookOprationService.getBookStatus(bookId) == 0) {
+            System.out.println("该图书已被借走");
+            return false;
+        }
+        // 在blockedCategories表中的书不能借
+        String catagory = bookId.substring(0, 1);
+        if (blockedCategories.contains(catagory)) {
+            System.out.println("该用户不允许借阅该类图书: " + catagory);
+            return false;
+        } else {
+            //借阅图书 图书status:=1
+            bookOprationService.borrowBook(bookId);
+            //新增一个record
+            recordService.borrowBook(userId, bookId);
+        }
         return true;
     }
 
     public double returnBook(String userId,String bookId) {
-        // TODO: 2019-01-26
+        BookOprationService bookOprationService = new BookOprationServiceImpl();
+        RecordService recordService = new RecordServiceImpl();
+
+        //还书
+        bookOprationService.returnBook(bookId);
+
         // 0表示成功，正数表示逾期罚款？
-        return 0;
+        //读取record信息
+        recordService.returnBook(userId, bookId);
+        double overdue=returnBook(userId,bookId);
+        return overdue;
+    }
+
+    public boolean pay(String userId, String bookId) {
+        //record更改
+        RecordService recordService = new RecordServiceImpl();
+        return recordService.pay(userId, bookId);
     }
 
     public int getStrategyId() {
