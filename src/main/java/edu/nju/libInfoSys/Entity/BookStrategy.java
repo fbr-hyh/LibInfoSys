@@ -5,19 +5,17 @@ import edu.nju.libInfoSys.Service.BookOperationServiceImpl;
 import edu.nju.libInfoSys.Service.RecordService;
 import edu.nju.libInfoSys.Service.RecordServiceImpl;
 
-import java.util.ArrayList;
-
 public class BookStrategy {
     private int strategyId;
     private String strategyName;
     private int maxBorrowNum;
     private int borrowPeriods;
-    private ArrayList<String> blockedCategories;
+    private String blockedCategories;
 
     public BookStrategy() {
     }
 
-    public BookStrategy(int strategyId, String strategyName, int maxBorrowNum, int borrowPeriods, ArrayList<String> blockedCategories) {
+    public BookStrategy(int strategyId, String strategyName, int maxBorrowNum, int borrowPeriods, String blockedCategories) {
         this.strategyId = strategyId;
         this.strategyName = strategyName;
         this.maxBorrowNum = maxBorrowNum;
@@ -101,11 +99,11 @@ public class BookStrategy {
         this.borrowPeriods = borrowPeriods;
     }
 
-    public ArrayList<String> getBlockedCategories() {
+    public String getBlockedCategories() {
         return blockedCategories;
     }
 
-    public void setBlockedCategories(ArrayList<String> blockedCategories) {
+    public void setBlockedCategories(String blockedCategories) {
         this.blockedCategories = blockedCategories;
     }
 }
