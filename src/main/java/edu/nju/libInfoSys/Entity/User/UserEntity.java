@@ -1,5 +1,6 @@
 package edu.nju.libInfoSys.Entity.User;
 
+import edu.nju.libInfoSys.Factory.ServiceFactory;
 import edu.nju.libInfoSys.Factory.StrategyFactory;
 import edu.nju.libInfoSys.Service.RecordService;
 import edu.nju.libInfoSys.Service.RecordServiceImpl;
@@ -105,7 +106,7 @@ public class UserEntity {
     }
 
     public boolean pay(String recordId) {
-        RecordService recordService = new RecordServiceImpl();
+        RecordService recordService = ServiceFactory.getRecordService();
         boolean borrowResult = recordService.pay(recordId);
         if (borrowResult) {
             System.out.println("缴费成功");
@@ -117,7 +118,7 @@ public class UserEntity {
 
     public void notifyObservers(String message) {
 
-        ArrayList<Administrator> administrators = new UserServiceImpl().getAllAdministrator();
+        ArrayList<Administrator> administrators = ServiceFactory.getUserService().getAllAdministrator();
         for (Administrator administrator : administrators) {
             administrator.update(message);
         }

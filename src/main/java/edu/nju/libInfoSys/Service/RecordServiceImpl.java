@@ -3,11 +3,14 @@ package edu.nju.libInfoSys.Service;
 import edu.nju.libInfoSys.Dao.RecordDao;
 import edu.nju.libInfoSys.Dao.RecordDaoImpl;
 import edu.nju.libInfoSys.Entity.RecordEntity;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.sql.Timestamp;
 
 public class RecordServiceImpl implements RecordService {
-    RecordDao recordDao = new RecordDaoImpl();
+    @Autowired
+    private RecordDao recordDao;
 
     @Override
     public boolean borrowBook(String userId, String bookId) {

@@ -5,11 +5,14 @@ import edu.nju.libInfoSys.Dao.UserInfoDaoImpl;
 import edu.nju.libInfoSys.Entity.BorrowRecord;
 import edu.nju.libInfoSys.Entity.OverduePenaltyRecord;
 import edu.nju.libInfoSys.Entity.RecordEntity;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 
 public class UserInfoServiceImpl implements UserInfoService {
-    UserInfoDao userInfoDao = new UserInfoDaoImpl();
+    @Autowired
+    UserInfoDao userInfoDao;
 
 //    @Override
 //    public ArrayList<BorrowRecord> getAllBorrowReport() {

@@ -1,5 +1,6 @@
 package edu.nju.libInfoSys.Entity;
 
+import edu.nju.libInfoSys.Factory.ServiceFactory;
 import edu.nju.libInfoSys.Service.BookOperationService;
 import edu.nju.libInfoSys.Service.BookOperationServiceImpl;
 import edu.nju.libInfoSys.Service.RecordService;
@@ -106,8 +107,8 @@ public class BookStrategyEntity {
     }
 
     public boolean borrowBook(String userId, String bookId) {
-        BookOperationService bookOprationService = new BookOperationServiceImpl();
-        RecordService recordService = new RecordServiceImpl();
+        BookOperationService bookOprationService = ServiceFactory.getBookOperationService();
+        RecordService recordService = ServiceFactory.getRecordService();
 
         //可能已被借走
         if (bookOprationService.getBookStatus(bookId) == 0) {
@@ -140,8 +141,8 @@ public class BookStrategyEntity {
     }
 
     public double returnBook(String userId, String bookId) {
-        BookOperationService bookOprationService = new BookOperationServiceImpl();
-        RecordService recordService = new RecordServiceImpl();
+        BookOperationService bookOprationService = ServiceFactory.getBookOperationService();
+        RecordService recordService = ServiceFactory.getRecordService();
 
         //还书
         bookOprationService.returnBook(bookId);

@@ -4,6 +4,7 @@ package edu.nju.libInfoSys.Entity.User;
 
 import edu.nju.libInfoSys.Entity.BorrowRecord;
 import edu.nju.libInfoSys.Entity.OverduePenaltyRecord;
+import edu.nju.libInfoSys.Factory.ServiceFactory;
 import edu.nju.libInfoSys.Service.BookOperationService;
 import edu.nju.libInfoSys.Service.BookOperationServiceImpl;
 import edu.nju.libInfoSys.Service.UserInfoService;
@@ -12,9 +13,8 @@ import edu.nju.libInfoSys.Service.UserInfoServiceImpl;
 import java.util.ArrayList;
 
 public class Administrator extends UserEntity implements edu.nju.libInfoSys.User {
-
-    UserInfoService userInfoService = new UserInfoServiceImpl();
-    BookOperationService bookOperationService = new BookOperationServiceImpl();
+    UserInfoService userInfoService = ServiceFactory.getUserInfoService();
+    BookOperationService bookOperationService = ServiceFactory.getBookOperationService();
 
     public Administrator() {
     }

@@ -3,9 +3,13 @@ package edu.nju.libInfoSys.Service;
 import edu.nju.libInfoSys.Dao.BookOperationDao;
 import edu.nju.libInfoSys.Dao.BookOperationDaoImpl;
 import edu.nju.libInfoSys.Entity.BookStrategyEntity;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 public class BookOperationServiceImpl implements BookOperationService {
-    BookOperationDao bookOperationDao = new BookOperationDaoImpl();
+    @Autowired
+    private BookOperationDao bookOperationDao;
+
     @Override
     public BookStrategyEntity getBookStrategyById(int id) {
         return bookOperationDao.getBookStrategyById(id);

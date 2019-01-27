@@ -7,7 +7,7 @@ import edu.nju.libInfoSys.Service.BookOperationServiceImpl;
 import java.util.InputMismatchException;
 
 public  class StrategyFactory {
-    private static BookOperationService bookOperationService =new BookOperationServiceImpl();
+    private static BookOperationService bookOperationService =ServiceFactory.getBookOperationService();
     private static BookStrategyEntity teacherStrategy;
     private static BookStrategyEntity undergraduateStrategy;
     private static BookStrategyEntity graduateStrategy;
