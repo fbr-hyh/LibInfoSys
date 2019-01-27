@@ -4,7 +4,11 @@ import edu.nju.libInfoSys.Factory.StrategyFactory;
 import edu.nju.libInfoSys.Service.BookOprationService;
 import edu.nju.libInfoSys.Service.UserService;
 import edu.nju.libInfoSys.Service.UserServiceImpl;
+import edu.nju.libInfoSys.onlineReading.OnlineReader;
+import edu.nju.libInfoSys.onlineReading.PDFReader;
+import edu.nju.libInfoSys.onlineReading.Reader;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class User {
@@ -46,6 +50,16 @@ public class User {
         return overduePenalty;
     }
 
+    public boolean pay(String bookId) {
+        boolean borrowResult = StrategyFactory.getStrategy(userType).pay(userId, bookId);
+        if (borrowResult) {
+            System.out.println("缴费成功");
+        } else {
+            System.out.println("缴费失败");
+        }
+        return borrowResult;
+    }
+
     public void notifyObservers(String message) {
 
         ArrayList<Administrator> administrators=new UserServiceImpl().getAllAdministrator();
@@ -53,6 +67,10 @@ public class User {
             administrator.update(message);
         }
 
+    }
+    public void read(String type, File file) {
+        OnlineReader onlineReader = new OnlineReader(type);
+        onlineReader.readFile(file);
     }
 
     public String getUserId() {
