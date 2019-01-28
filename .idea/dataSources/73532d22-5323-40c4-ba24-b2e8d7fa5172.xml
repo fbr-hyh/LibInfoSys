@@ -1231,7 +1231,6 @@
     <column id="303" parent="280" name="returnTime">
       <Position>5</Position>
       <DataType>timestamp|0s</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="304" parent="280" name="overduePenalty">
